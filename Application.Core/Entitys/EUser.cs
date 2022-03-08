@@ -18,7 +18,7 @@ namespace Application.Core.Entitys
         public DateTime? date_of_birth { get; set; }
         public string Phone { get; set; }
         public string State { get; set; }
-        public string Image { get; set; }
+        //public string Codigo { get; set; }
 
 
         public string NameRol { get; set; }

@@ -38,7 +38,7 @@ namespace Application.Infraestructure.Data
                         date_of_birth = Convert.ToDateTime(reader["fecha_naci"].ToString()),
                         Phone = reader["telefono"].ToString(),
                         State = reader["estado"].ToString(),
-                        Image = reader["imagen"].ToString(),
+                        //Codigo = reader["codigo"].ToString(),
                         NameRol = reader["rol"].ToString()
 
                     }); ;
@@ -79,7 +79,7 @@ namespace Application.Infraestructure.Data
                         date_of_birth = Convert.ToDateTime(reader["fecha_naci"].ToString()),
                         Phone = reader["telefono"].ToString(),
                         State = reader["estado"].ToString(),
-                        Image = reader["imagen"].ToString(),
+                        //Codigo = reader["codigo"].ToString(),
                         NameRol = reader["rol"].ToString()
 
                     }); ;
@@ -115,7 +115,7 @@ namespace Application.Infraestructure.Data
                         date_of_birth = Convert.ToDateTime(reader["fecha_naci"].ToString()),
                         Phone = reader["telefono"].ToString(),
                         State = reader["estado"].ToString(),
-                        Image = reader["imagen"].ToString(),
+                        //Codigo = reader["codigo"].ToString(),
                         NameRol = reader["rol"].ToString()
 
                     }); ;
@@ -152,7 +152,7 @@ namespace Application.Infraestructure.Data
                         date_of_birth = Convert.ToDateTime(reader["fecha_naci"].ToString()),
                         Phone = reader["telefono"].ToString(),
                         State = reader["estado"].ToString(),
-                        Image = reader["imagen"].ToString(),
+                        //Codigo = reader["codigo"].ToString(),
                         NameRol = reader["rol"].ToString()
 
                     }); ;
@@ -179,7 +179,7 @@ namespace Application.Infraestructure.Data
                 cmd.Parameters.AddWithValue("@fecha_naci", u.date_of_birth);
                 cmd.Parameters.AddWithValue("@telefono", u.Phone);
                 cmd.Parameters.AddWithValue("@estado", u.State);
-                cmd.Parameters.AddWithValue("@imagen", u.Image);
+             
                 cmd.Connection = cnx;
                 int rows = await cmd.ExecuteNonQueryAsync();
                 return rows > 0;
@@ -206,7 +206,7 @@ namespace Application.Infraestructure.Data
                 cmd.Parameters.AddWithValue("@fecha_naci", u.date_of_birth);
                 cmd.Parameters.AddWithValue("@telefono", u.Phone);
                 cmd.Parameters.AddWithValue("@estado", u.State);
-                cmd.Parameters.AddWithValue("@imagen", u.Image);
+              
                 cmd.Connection = cnx;
 
 
